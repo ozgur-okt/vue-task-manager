@@ -3,6 +3,7 @@
     <Task
       @toggle-reminder="$emit('toggle-reminder', task.id)"
       @delete-task="$emit('delete-task', task.id)"
+      @update-task="handleItemUpdated"
       :task="task"
     />
   </div>
@@ -19,6 +20,11 @@ export default {
   components: {
     Task,
   },
-  emits: ['delete-task', 'toggle-reminder'],
+  methods: {
+    handleItemUpdated(item) {
+      this.$emit('update-task', item)
+    },
+  },
+  emits: ['delete-task', 'toggle-reminder', 'update-task'],
 }
 </script>

@@ -1,10 +1,16 @@
 {
   "tasks": [
     {
-      "text": "meksika açmazı",
-      "day": "sad",
+      "text": "go to dentist",
+      "day": "12 April",
+      "reminder": true,
+      "id": 1
+    },
+    {
+      "text": "meet with friend",
+      "day": "Next friday",
       "reminder": false,
-      "id": "7dvBd2q"
+      "id": 2
     }
   ]
 }
